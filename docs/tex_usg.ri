@@ -1,0 +1,27 @@
+.^
+В каталоге ./add/bibtex
+находится командный файл bibTest.cmd
+для построения pdf- документа с гиперссылками и 
+c использованием базы данных библиографии.
+
+Его содержимое
+.n
+
+dot.exe      -Tps  mkDoc.dot  -o.mkDoc.ps  
+epstopdf.exe .mkDoc.ps --outfile=mkDoc.pdf
+mkTex.exe    class=article;letter;preamble=12 <bibTest.txt > .bibTest.tex
+pdflatex.exe -interaction=batchmode  -terminal=oem  .bibTest.tex
+makeindex    2>.makeindex.log .bibTest.idx -o .bibTest.ind
+bibtex       -include-directory=./bibDB  .bibTest   1>.bibTex.log
+pdflatex.exe -interaction=batchmode  -terminal=oem  .bibTest.tex
+pdflatex.exe -interaction=batchmode  -terminal=oem  .bibTest.tex
+
+.f
+
+.^
+Файл bibTest.txt представляет собой пример документа
+с гиперссылками.
+.^
+База данных расположена в каталоге ./add/bibtex/bibDB.
+.^
+Построенный документ - bibTest.pdf.

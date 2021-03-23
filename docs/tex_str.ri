@@ -1,0 +1,79 @@
+.^
+Для построения утилиты наберите (после того как 
+согласно здоровью и полученному образованию правильно зададите параметры
+для make файла, лежащие в файле parms.inc):
+.n
+
+mk mkTex
+
+.f
+.^
+Для построения документации необходима утилита RIO:
+.n
+
+cd ./docs
+rio <mkTex.rio >mkTex.txt
+
+.f
+.^
+Для получения подсказки  наберите:
+
+.n
+
+ usage LaTex generator version of 1.21.0:
+ G:\agp\96\mkTex\bld\mkTex.exe [preamble[={1|2|10|12}]][;class=xxx][;rsl][;skipAppendix][;dbg][;letter;doxygen]  <input >output
+ 	where
+ preamble    - create preamble
+ preamble=1  - create preamble and initial for cp866(emtex)
+ preamble=2  - create preamble and initial for cp1251(miktex) and add
+      '\usepackage[russian]{babel}'
+ preamble=10 - create preamble for pdflatex(as doxygen makes)
+ preamble=12 - as 10 and add babel package
+ class=xxx   - xxx isin {article,report,book,etc}
+ rslenv      - to use package for rsl
+ doxygen     - to use crossreferens. additinal command: .x ?metka word
+ tsize=N     - size of normal text. O<=N<10 (tiny, small, normalsize:4, large, Large:6, etc)
+ vsize=N     - size of verbatim text
+ there is the special case of rio comments:
+ .;# - swith on the bibliography instead the items (.(, .+, .))
+ .;\\c ref - +> .\cite{ref} - make the reference to bibliography
+ .;\\bla bla bla - just copy \bla bla bla to a tex text
+
+.f
+
+.-
+В режиме doxygen включается генерация гиперссылок на термины, заносимые в индекс.
+.x doxygen  
+
+
+
+.-
+Параметры tsize и vsize  задают размеры нормального шрифта и шрифта для 
+текста, выводимого без изменения.
+Таблица соответствия размеров
+.n
+
+0      tiny
+1      scriptsize
+2      footnotesize
+3      small
+4      normalsize
+5      large
+6      Large
+7      LARGE
+8      huge
+9      Huge
+
+.f
+
+.^
+Для построения примера ./add/bibtex/bibTest.pdf
+наберите
+.n
+cd ./add/bibtex
+bibTest.cmd
+.f
+.^
+При этом считается, что установлен
+MikTex [1], и пакет создания графиков Graphviz [4].
+

@@ -1,0 +1,5 @@
+preamble
+  "\\renewcommand{\\indexname}{INDEX}
+   \\begin{theindex}
+   \\addcontentsline{toc}{chapter}{\\indexname  }
+   "

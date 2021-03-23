@@ -1,0 +1,13 @@
+digraph X { 
+  node[shape=box]
+  dot  -> "dot.exe"   -> "epstopdf.exe" -> "pdflatex.exe(1)"
+  txt  -> "mkTex.exe" -> "pdflatex.exe(1)";
+  "pdflatex.exe(1)" -> "makeindex.exe" -> "pdflatex.exe(2)";
+  "pdflatex.exe(1)" -> "bibtex.exe" -> "pdflatex.exe(2)";
+  "pdflatex.exe(2)" -> "pdflatex.exe(3)" -> pdf ;
+   dot [shape=plaintext, label="mkDoc.dot"  ];
+   txt [shape=plaintext, label="bibTest.txt"];
+   pdf [shape=plaintext, label="bibTest.pdf"];
+}
+
+

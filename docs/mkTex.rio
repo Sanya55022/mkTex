@@ -1,0 +1,181 @@
+._ UA.AGP1.mkTex-1.22.3/0.9.5 31 
+.d nm "Создание простых документов LaTex"
+.d id mkTex
+.%-
+
+
+.!  ANNOTATION
+
+.^
+Данный документ содержит сведения о назначении утилиты \nm [2],
+общего ее описания и описания поддерживаемых команд.
+Небольшой набор команд, наследованный от утилиты RIO [3], 
+
+ является достаточным для использования
+ вместе с пакетом MikTex [1]
+на этапе обучения или для создания техничекой документации.
+.^
+Утилита имеет обозначение \id.
+.^
+В комплекте поставляется командный файл построения
+pdf-документа с включаемыми графом.
+
+
+
+
+.|
+Дата создания документа: \@D.\@M.\@Y
+.!
+
+.% +
+
+
+.1  COMMON INFORMATION ABOUT \nm
+.<tex_sum.ri
+
+
+.1 HOW TO BUILD AND RUN \nm
+.<tex_str.ri
+
+.1 DESCRIPTION OF \nm
+.<tex_dcl.ri
+
+.1 USAGE 
+.<tex_usg.ri
+
+.1 НЕОЖИДАННОЕ ПОВЕДЕНИЕ
+.<tex_err.ri
+
+.p
+
+.1 EXAMPLE OF USAGE  BIBLIOGRAPHY 
+.^
+Пример оформления  списка литературы.
+На метки после команды .+ 
+можно ссылаться командо .;c metka
+или напрямую, командой LaTex-а .;\cite{metka}.
+
+.n
+
+ .;#
+ .(
+ .+ MikTex
+ Donald E. Knuth
+ MikTex.
+ .n
+ http://www.miktex.org
+ .f
+ .+ mkTex
+ agp1.
+ RIO to LaTex convertor.
+ .n
+ http://i.com.ua/~agp1/ru/mkTex.html
+ .f
+
+ .+ RIO
+ M.V.Nikolaev, A.Y.Medinetz, A.Pikovsky,
+ RIO - plan text formater.
+ .n
+ http://users.i.com.ua/~agp1/ru/rio.html
+ .f
+ .+ DOT
+ AT&T and Lucent Bell Labs.
+ Graphviz - Graph Visualization Software
+ .n
+ http://www.graphviz.org/
+ .f
+
+ .+   DJ1
+ Джудит С.Боуман и др. 
+ Практическое руководство по SQL. 
+ 3-е издание.: Пер. с англ. - К.: Диалектика, 1997.- 320с.
+ .+   Date1
+ К.Дж. Дейт. 
+ Введение в системы баз данных.
+ 6-е издание.:  Пер. с англ. - К.: Диалектика, 1998. -784.
+ .;.+
+ .;C.J. Date. An intpoduction to database systems.
+ .;Sixth edition. Addison-Wesley Publishing Company.
+
+ .+   Raise1
+ The RAISE Language Group. 
+ The RAISE SPECIFICATION LANGUAGE.
+ ISBN 0-13-752833-7.
+ Denmark, Herdfordshire, Prentice Hall Europe, 1992.- 396;
+
+ .+    Raise2
+ The RAISE Method Group.
+ The RAISE Development Method.
+ First published 1995 by Prentice Hall International (UK)
+ Limited.
+
+ 
+ .)
+.f
+
+
+.1 Литература
+
+.;#
+
+.(
+.+ MikTex
+Donald E. Knuth
+MikTex.
+.n
+http://www.miktex.org
+.f
+.+ mkTex
+agp1.
+RIO to LaTex convertor.
+.n
+http://i.com.ua/~agp1/ru/mkTex.html
+.f
+
+.+ RIO
+M.V.Nikolaev, A.Y.Medinetz, A.Pikovsky,
+RIO - plan text formater.
+.n
+http://users.i.com.ua/~agp1/ru/rio.html
+.f
+.+ DOT
+AT&T and Lucent Bell Labs.
+Graphviz - Graph Visualization Software
+.n
+http://www.graphviz.org/
+.f
+
+.+   DJ1
+Джудит С.Боуман и др. 
+Практическое руководство по SQL. 
+3-е издание.: Пер. с англ. - К.: Диалектика, 1997.- 320с.
+.+   Date1
+К.Дж. Дейт. 
+Введение в системы баз данных.
+6-е издание.:  Пер. с англ. - К.: Диалектика, 1998. -784.
+.;.+
+.;C.J. Date. An intpoduction to database systems.
+.;Sixth edition. Addison-Wesley Publishing Company.
+
+.+   Raise1
+The RAISE Language Group. 
+The RAISE SPECIFICATION LANGUAGE.
+ISBN 0-13-752833-7.
+Denmark, Herdfordshire, Prentice Hall Europe, 1992.- 396;
+
+.+    Raise2
+The RAISE Method Group.
+The RAISE Development Method.
+First published 1995 by Prentice Hall International (UK)
+Limited.
+
+.)
+
+
+.1 Index
+.<Index
+
+.i INDEX
+
+.p
+.$
